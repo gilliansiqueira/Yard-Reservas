@@ -315,6 +315,33 @@
   .ticket-btn{
     margin-top:0;
   }
+ 
+  /* ---------- CARDÁPIO ---------- */
+  .menu-category{ margin-top:50px; }
+  .menu-category h3{
+    font-size:1.1rem; text-transform:uppercase; letter-spacing:0.18em;
+    color:var(--teal); margin-bottom:18px;
+  }
+  .menu-grid{
+    display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px;
+  }
+  .menu-card{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); overflow:hidden;
+  }
+  .menu-thumb{
+    min-height:170px; background:linear-gradient(135deg, rgba(35,242,209,0.12), rgba(255,45,143,0.08));
+    display:flex; align-items:center; justify-content:center; color:var(--muted);
+    font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em;
+  }
+  .menu-body{ padding:18px; }
+  .menu-name{ font-family:'Anton',sans-serif; text-transform:uppercase; font-size:1.05rem; margin-bottom:10px; }
+  .menu-desc{ color:var(--muted); font-size:0.9rem; margin-bottom:12px; }
+  .menu-price{ font-weight:700; color:var(--text); }
+  .menu-footer{ margin-top:32px; display:flex; justify-content:center; }
+  @media(max-width:820px){
+    .menu-grid{ grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
@@ -326,6 +353,7 @@
   <div class="nav-links">
     <a href="#programacao">Programação</a>
     <a href="#reservas">Reservas</a>
+    <a href="#cardapio">Cardápio</a>
     <a href="#info">Info</a>
     <a class="cta" href="#reservas">Reservar mesa</a>
   </div>
@@ -425,6 +453,83 @@
     <p class="ticket-question">Só quer garantir sua entrada?</p>
     <h2 class="ticket-title">Lista R$40<br>a noite toda</h2>
     <a href="https://www.yardcwb.com.br/store/yard-cwb/acc/86e78499eeb33fb9cac16b7555b50767" target="_blank" rel="noopener" class="btn solid ticket-btn">Comprar ingresso</a>
+  </div>
+</section>
+ 
+<section id="cardapio">
+  <div class="section-head">
+    <span class="eyebrow">Cardápio</span>
+    <h2 class="section-title display">Lanches & Drinks</h2>
+    <p class="section-desc">Veja nossas opções rápidas para beliscar ou beber enquanto garante sua mesa. Esta é uma seleção breve; o cardápio completo está no link no fim da seção.</p>
+  </div>
+  <div class="menu-category">
+    <h3>Lanches</h3>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">X-Burguer</div>
+          <p class="menu-desc">Pão brioche, hambúrguer artesanal, queijo, alface e molho especial.</p>
+          <div class="menu-price">R$ 32,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Batata Rústica</div>
+          <p class="menu-desc">Porção crocante com tempero especial e aioli de alho.</p>
+          <div class="menu-price">R$ 24,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Nuggets</div>
+          <p class="menu-desc">6 unidades de frango empanado com molho de mostarda e mel.</p>
+          <div class="menu-price">R$ 28,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Nachos</div>
+          <p class="menu-desc">Tortillas crocantes com cheddar, pico de gallo e creme azedo.</p>
+          <div class="menu-price">R$ 29,00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-category">
+    <h3>Drinks</h3>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Gin Tonic</div>
+          <p class="menu-desc">Gin premium, água tônica e toque cítrico com zimbro.</p>
+          <div class="menu-price">R$ 38,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Caipirinha</div>
+          <p class="menu-desc">Limão fresco, cachaça e açúcar — clássico brasileiro.</p>
+          <div class="menu-price">R$ 34,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Moscow Mule</div>
+          <p class="menu-desc">Vodka, ginger beer e limão em caneca gelada.</p>
+          <div class="menu-price">R$ 36,00</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-body">
+          <div class="menu-name">Long Neck</div>
+          <p class="menu-desc">Cerveja gelada para pedir no balcão com rapidez.</p>
+          <div class="menu-price">R$ 22,00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-footer">
+    <a href="https://www.menudigital.app.br/yardcwb/" target="_blank" rel="noopener" class="btn ghost">Ver cardápio completo</a>
   </div>
 </section>
  
